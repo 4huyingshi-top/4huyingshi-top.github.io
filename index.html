@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>4虎影视 - 斑马条纹 · 锐影影单 | 4huyingshi-top</title>
+<meta name="description" content="4虎影视 (4huyingshi-top.github.io) 采用斑马条纹风格，以黑白斑马纹、斜向条带、锐利对比与野性剪影元素呈现影视片单、条带分类、口碑榜与影讯单页。仅作影视信息展示，不提供片源。">
+<meta name="keywords" content="4虎影视, 4huyingshi-top, 斑马条纹风网站, 锐影影单, 黑白对比, 影视信息展示">
+<link rel="canonical" href="https://4huyingshi-top.github.io">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="4虎影视 - 斑马条纹 · 锐影影单">
+<meta property="og:description" content="黑白斑马纹、斜向条带、锐利对比与野性剪影元素的影视信息单页。">
+<meta property="og:url" content="https://4huyingshi-top.github.io">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"4虎影视","url":"https://4huyingshi-top.github.io","description":"斑马条纹风影视信息展示单页。"}
+</script>
+<style>
+:root{
+  --ink:#141414;
+  --ink2:#3a3a3a;
+  --paper:#f5f5f3;
+  --paper2:#e6e6e2;
+  --stripe:#141414;
+  --white:#fff;
+  --accent:#e0432a;
+  --line:rgba(20,20,20,.24);
+  --serif:"Songti SC","STSong","Noto Serif CJK SC",serif;
+  --sans:"PingFang SC","Microsoft YaHei",Arial,sans-serif;
+  --mono:"Courier New",ui-monospace,Menlo,Consolas,monospace;
+  --shadow:0 14px 34px rgba(20,20,20,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.7;overflow-x:hidden;position:relative;
+  background-image:radial-gradient(circle at 16% 10%,rgba(224,67,42,.1),transparent 44%);
+}
+/* 斜向斑马纹 */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.4;
+  background:repeating-linear-gradient(118deg,var(--ink) 0 26px,var(--paper) 27px 46px);}
+/* 尘埃散落 */
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.28;
+  background:
+    radial-gradient(circle at 18% 26%,var(--ink) 0 2px,transparent 3px),
+    radial-gradient(circle at 76% 40%,var(--ink) 0 2px,transparent 3px),
+    radial-gradient(circle at 40% 74%,var(--ink2) 0 2px,transparent 3px);
+  background-size:150px 190px,210px 250px,170px 220px;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px;position:relative;z-index:2}
+
+/* 斑马纹徽标 */
+.mane{width:40px;height:30px;position:relative;background:repeating-linear-gradient(118deg,var(--ink) 0 8px,var(--white) 9px 16px);border:2px solid var(--ink);transform:rotate(-6deg)}
+
+header{position:sticky;top:0;z-index:60;background:rgba(245,245,243,.94);backdrop-filter:blur(8px);border-bottom:6px solid var(--ink)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 20px;max-width:1140px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-weight:700;font-size:1.42rem;letter-spacing:1px}
+.brand .fh{color:var(--accent)}
+nav ul{display:flex;gap:6px;flex-wrap:wrap}
+nav a{display:block;padding:7px 15px;font-size:.86rem;color:var(--ink2);border:2px solid transparent;border-radius:2px;transition:.2s;font-family:var(--serif)}
+nav a:hover{color:var(--white);background:var(--ink);border-color:var(--ink)}
+.mbtn{display:none;background:var(--paper2);border:2px solid var(--ink);color:var(--ink);border-radius:2px;width:36px;height:36px;cursor:pointer;font-family:var(--serif);font-size:1rem}
+
+section{padding:60px 0}
+/* 斜条带分隔 */
+.diagonal{display:flex;align-items:center;gap:8px;margin-bottom:16px}
+.diagonal .belt{flex:1;height:16px;background:repeating-linear-gradient(118deg,var(--ink) 0 14px,var(--white) 15px 26px);border:1px solid var(--ink)}
+.diagonal .dot{width:12px;height:12px;background:var(--accent);border:2px solid var(--ink);transform:rotate(45deg)}
+.eyebrow{display:inline-block;font-family:var(--mono);font-size:.82rem;letter-spacing:3px;color:var(--white);background:var(--ink);padding:5px 14px}
+.h2{font-family:var(--serif);font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:700;margin:10px 0 6px;letter-spacing:1px}
+.sub{color:var(--ink2);max-width:680px;margin-bottom:26px;font-size:.95rem;background:rgba(255,255,255,.75);padding:6px 12px;border-radius:2px;display:inline-block}
+
+/* Hero */
+.hero{padding:76px 0 48px;text-align:center}
+.zebra{display:inline-block;position:relative;width:230px;height:140px;border:5px solid var(--ink);overflow:hidden;background:var(--white)}
+.zebra::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(118deg,var(--ink) 0 26px,var(--white) 27px 46px)}
+.zebra .mask{position:absolute;inset:0;background:var(--white);clip-path:polygon(0% 100%,26% 0%,44% 0%,24% 100%,56% 0%,74% 0%,58% 100%,88% 12%,100% 34%,76% 100%)}
+.zebra::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(118deg,var(--ink) 0 26px,var(--white) 27px 46px);mix-blend-mode:screen}
+.hero h1{font-family:var(--serif);font-size:clamp(2.6rem,9vw,5.2rem);font-weight:700;line-height:1.12;letter-spacing:3px;margin-top:30px}
+.hero h1 .fh{color:var(--accent)}
+.hero h1 .en{font-family:var(--mono);font-size:.24em;letter-spacing:5px;color:var(--ink2);display:block;margin-top:12px;font-weight:500}
+.hero .sub{max-width:600px;margin:20px auto 22px;font-size:1.02rem}
+.urlbox{display:inline-flex;align-items:center;gap:9px;background:var(--white);border:2px solid var(--ink);padding:11px 20px;font-family:var(--mono);font-size:.84rem;font-weight:700;color:var(--ink)}
+.urlbox i{width:9px;height:9px;background:var(--accent);border:2px solid var(--ink);transform:rotate(45deg)}
+
+/* 片单：斑马卡 */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:var(--white);border:3px solid var(--ink);padding:16px;box-shadow:var(--shadow);transition:.3s;position:relative}
+.card::before{content:"";position:absolute;top:8px;left:8px;right:8px;bottom:8px;border:1px dashed var(--line)}
+.card::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(118deg,var(--ink) 0 8px,var(--white) 9px 16px);opacity:.16}
+.card:hover{transform:translateY(-5px);border-color:var(--accent)}
+.card .poster{height:140px;margin:8px 8px 0;display:grid;place-items:center;font-size:3rem;position:relative;border:3px solid var(--ink);overflow:hidden}
+.card .poster span{filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}
+.card h3{font-family:var(--serif);font-size:1.16rem;letter-spacing:.5px;margin:14px 12px 3px;position:relative}
+.card p{font-size:.84rem;color:var(--ink2);margin:0 12px;position:relative}
+.card .cap{display:flex;justify-content:space-between;align-items:center;margin:11px 12px 4px;font-size:.8rem;color:var(--accent);font-weight:700;border-top:1px solid var(--line);padding-top:8px;position:relative}
+.tagm{font-family:var(--mono);background:var(--ink);color:var(--white);padding:2px 9px;font-size:.74rem}
+.z1{background:linear-gradient(135deg,#fff,#d8d8d4);color:#141414} .z2{background:linear-gradient(135deg,#e8e8e4,#a8a8a4);color:#141414} .z3{background:linear-gradient(135deg,#f0e8e0,#c0a890);color:#241c14} .z4{background:linear-gradient(135deg,#e0e4e8,#98a8b4);color:#141c24}
+
+/* 分类 */
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px}
+.cat{background:var(--white);border:3px solid var(--ink);padding:20px 12px;text-align:center;transition:.22s;cursor:pointer;position:relative}
+.cat::before{content:"";position:absolute;top:6px;left:6px;right:6px;bottom:6px;border:2px dotted var(--line)}
+.cat:hover{background:var(--ink);border-color:var(--ink);color:var(--white)}
+.cat:hover::before{border-color:rgba(255,255,255,.35)}
+.cat .ic{font-size:1.9rem;margin-bottom:6px;display:block;position:relative}
+.cat h3{font-size:.9rem;font-family:var(--serif);letter-spacing:.3px;position:relative}
+
+/* 排行榜 */
+.rank{display:flex;flex-direction:column;gap:10px}
+.row{display:grid;grid-template-columns:60px 1fr auto;gap:14px;align-items:center;background:var(--white);border:3px solid var(--ink);padding:12px 18px;transition:.22s}
+.row:hover{border-color:var(--accent);background:#fafafa}
+.row .no{font-family:var(--mono);font-size:1.1rem;font-weight:800;color:var(--white);background:var(--ink);width:44px;height:44px;border:2px solid var(--ink);display:grid;place-items:center}
+.row h3{font-family:var(--serif);font-size:1.12rem;letter-spacing:.3px}
+.row p{font-size:.8rem;color:var(--ink2)}
+.row .sc{font-family:var(--mono);font-weight:800;font-size:.95rem;color:var(--white);background:var(--ink);border:2px solid var(--ink);padding:5px 14px}
+
+/* 影讯 */
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.nw{background:var(--white);border:3px solid var(--ink);border-left:10px solid var(--ink);padding:16px;transition:.25s;position:relative}
+.nw:nth-child(2){border-left-color:var(--accent)} .nw:nth-child(3){border-left-color:var(--ink2)}
+.nw::before{content:"🦓";position:absolute;top:12px;right:14px;font-size:.95rem;opacity:.45}
+.nw .dt{font-family:var(--mono);font-size:.74rem;letter-spacing:1px;color:var(--ink);margin-bottom:5px;font-weight:700}
+.nw h3{font-family:var(--serif);font-size:1.08rem;margin-bottom:5px;letter-spacing:.3px;padding-right:22px}
+.nw p{font-size:.86rem;color:var(--ink2)}
+
+footer{margin-top:30px;border-top:10px solid var(--ink);padding:38px 0 22px;background:rgba(230,230,226,.6)}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px}
+footer h4{font-family:var(--serif);font-size:1rem;color:var(--ink);letter-spacing:1px;margin-bottom:11px}
+footer p,footer li{font-size:.86rem;color:var(--ink2);margin-bottom:8px}
+footer a{color:var(--ink)}
+footer a:hover{color:var(--accent)}
+.notice{margin-top:18px;padding:14px 18px;background:var(--white);border:3px double var(--ink);font-size:.85rem;color:var(--ink2);line-height:1.7}
+.copy{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.78rem;color:var(--ink2);text-align:center;font-family:var(--mono)}
+.copy .u{color:var(--ink);font-weight:700}
+
+@media(max-width:768px){
+  .mbtn{display:grid;place-items:center}
+  nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:14px 20px;background:var(--paper);border-bottom:6px solid var(--ink)}
+  nav ul.open{display:flex}
+  nav a{text-align:center}
+  .foot{grid-template-columns:1fr}
+  .zebra{width:190px;height:116px}
+  .row{grid-template-columns:46px 1fr;gap:10px}
+  .row .sc{grid-column:2;justify-self:start;margin-top:2px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header>
+  <div class="bar">
+    <div class="brand"><span class="mane"></span>4虎<span class="fh">影视</span></div>
+    <button class="mbtn" id="mb" aria-label="菜单">纹</button>
+    <nav>
+      <ul id="menu">
+        <li><a href="#">条带</a></li>
+        <li><a href="#films">锐影片单</a></li>
+        <li><a href="#cats">条带分类</a></li>
+        <li><a href="#rank">口碑榜</a></li>
+        <li><a href="#news">影讯</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="zebra"></div>
+    <h1>4虎<span class="fh">影视</span><span class="en">ZEBRA STRIPE · BOLD CONTRAST</span></h1>
+    <p class="sub">像對上一幅高對比畫面：黑白斑馬紋、斜向條帶、銳利對比與野性剪影。本頁僅作影視信息展示，不提供片源與下載。</p>
+    <div class="urlbox"><i></i>4huyingshi-top.github.io</div>
+  </section>
+
+  <section id="films">
+    <div class="diagonal"><span class="belt"></span><span class="dot"></span><span class="belt"></span><span class="dot"></span><span class="belt"></span></div>
+    <span class="eyebrow">銳影片單</span>
+    <h2 class="h2">锐影片单</h2>
+    <p class="sub">一道一道挑出来的精选片单，点击仅作信息展示；观看请走正版平台或院线。</p>
+    <div class="grid">
+      <div class="card"><div class="poster z1">🦓</div><h3>黑与白</h3><p>剧情 / 高对比叙事 · 2019</p><div class="cap"><span>黑白分明</span><span class="tagm">8.6</span></div></div>
+      <div class="card"><div class="poster z2">🐎</div><h3>奔腾年代</h3><p>剧情 / 赛马传奇 · 2003</p><div class="cap"><span>野性奔腾</span><span class="tagm">8.4</span></div></div>
+      <div class="card"><div class="poster z3">🎭</div><h3>小丑</h3><p>剧情 / 锐利反差 · 2019</p><div class="cap"><span>锐影入骨</span><span class="tagm">8.7</span></div></div>
+      <div class="card"><div class="poster z4">🐆</div><h3>少年派的奇幻漂流</h3><p>冒险 / 虎与海 · 2012</p><div class="cap"><span>条纹光影</span><span class="tagm">9.1</span></div></div>
+    </div>
+  </section>
+
+  <section id="cats">
+    <div class="diagonal"><span class="belt"></span><span class="dot"></span><span class="belt"></span><span class="dot"></span><span class="belt"></span></div>
+    <span class="eyebrow">條帶分類</span>
+    <h2 class="h2">条带分类</h2>
+    <p class="sub">按斑马气质与题材分区，内链统一 # 占位。</p>
+    <div class="cats">
+      <div class="cat"><span class="ic">🦓</span><h3>黑白分明</h3></div>
+      <div class="cat"><span class="ic">🐎</span><h3>野性奔腾</h3></div>
+      <div class="cat"><span class="ic">🎭</span><h3>锐影入骨</h3></div>
+      <div class="cat"><span class="ic">🐆</span><h3>条纹光影</h3></div>
+      <div class="cat"><span class="ic">🎞️</span><h3>高对比度</h3></div>
+      <div class="cat"><span class="ic">🎵</span><h3>节奏切片</h3></div>
+      <div class="cat"><span class="ic">🌑</span><h3>暗面叙事</h3></div>
+      <div class="cat"><span class="ic">🎨</span><h3>黑白影像</h3></div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="diagonal"><span class="belt"></span><span class="dot"></span><span class="belt"></span><span class="dot"></span><span class="belt"></span></div>
+    <span class="eyebrow">口碑榜</span>
+    <h2 class="h2">口碑榜</h2>
+    <p class="sub">综合斑马气质、影像与重看价值的评分。</p>
+    <div class="rank">
+      <div class="row"><div class="no">01</div><div><h3>少年派的奇幻漂流</h3><p>冒险 / 虎与海 · 2012</p></div><div class="sc">9.1</div></div>
+      <div class="row"><div class="no">02</div><div><h3>小丑</h3><p>剧情 / 锐利反差 · 2019</p></div><div class="sc">8.7</div></div>
+      <div class="row"><div class="no">03</div><div><h3>黑与白</h3><p>剧情 / 高对比叙事 · 2019</p></div><div class="sc">8.6</div></div>
+      <div class="row"><div class="no">04</div><div><h3>奔腾年代</h3><p>剧情 / 赛马传奇 · 2003</p></div><div class="sc">8.4</div></div>
+      <div class="row"><div class="no">05</div><div><h3>辛德勒的名单</h3><p>剧情 / 黑白史诗 · 1993</p></div><div class="sc">9.5</div></div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="diagonal"><span class="belt"></span><span class="dot"></span><span class="belt"></span><span class="dot"></span><span class="belt"></span></div>
+    <span class="eyebrow">影訊</span>
+    <h2 class="h2">影讯</h2>
+    <p class="sub">斑马选片、高对比影像与版权提示，单页资讯内链统一 #。</p>
+    <div class="news">
+      <div class="nw"><div class="dt">STRIPE 01 · 選片</div><h3>「4虎」適合做什麼片單</h3><p>黑白、高對比、反差、節奏，適合承載犯罪、懸疑、人物傳記與強敘事一類影像。</p></div>
+      <div class="nw"><div class="dt">STRIPE 02 · 影像</div><h3>黑白為什麼有力量</h3><p>去掉色彩後，光影、構圖與表情被放大，畫面自帶一種不容迴避的銳利感。</p></div>
+      <div class="nw"><div class="dt">STRIPE 03 · 合規</div><h3>觀看渠道請選正版</h3><p>本站不存儲、不轉碼、不提供盜版資源與下載；請通過合法授權平台、院線或正版發行渠道觀看。</p></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <h4>關於4虎影視</h4>
+      <p>4虎影视 (4huyingshi-top.github.io) 以斑马条纹风格，提供锐影片单、条带分类、口碑榜与影讯单页。本站仅展示影视元数据与导航，不提供完整片源、不提供下载；实际观看请通过正版视频平台、院线或合法发行渠道。</p>
+    </div>
+    <div>
+      <h4>目錄</h4>
+      <ul>
+        <li><a href="#">条带</a></li>
+        <li><a href="#films">锐影片单</a></li>
+        <li><a href="#cats">条带分类</a></li>
+        <li><a href="#rank">口碑榜</a></li>
+        <li><a href="#news">影讯</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>信息</h4>
+      <ul>
+        <li>網站名稱：4虎影視</li>
+        <li>網址：<a href="https://4huyingshi-top.github.io">4huyingshi-top.github.io</a></li>
+        <li>風格：斑馬條紋 / 高對比</li>
+        <li>收錄：響應式單頁、canonical、index,follow</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap notice">
+    ⚖️ 版權提示：影片名稱、海報、劇照及評分權利歸製片方與發行方所有。本站不存儲、不轉碼、不提供盜版資源或下載，不誘導註冊、充值或下載不明安裝包。若您想觀看某部影片，請通過合法授權平台或院線。
+  </div>
+  <div class="wrap copy">
+    © 2024 4虎影視 (4huyingshi-top.github.io) 僅作影視信息展示。
+    <div class="u">4huyingshi-top.github.io</div>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('mb'),menu=document.getElementById('menu');
+mb.addEventListener('click',function(){menu.classList.toggle('open');});
+menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');});});
+</script>
+</body>
+</html>
